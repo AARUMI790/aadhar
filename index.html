@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आधार और वोटर कार्ड प्रिंट</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>आधार और वोटर कार्ड प्रिंट करें</h1>
+    </header>
+
+    <main>
+        <form id="downloadForm">
+            <label for="cardType">कार्ड का प्रकार चुनें:</label>
+            <select id="cardType" name="cardType">
+                <option value="aadhaar">आधार कार्ड</option>
+                <option value="voter">वोटर कार्ड</option>
+            </select>
+            
+            <label for="cardNumber">कार्ड नंबर:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <button type="submit">डाउनलोड करें</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 आधार और वोटर कार्ड प्रिंट</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
