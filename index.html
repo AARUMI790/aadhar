@@ -1,35 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>आधार और वोटर कार्ड प्रिंट</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>आधार और वोटर कार्ड प्रिंट करें</h1>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    <main>
-        <form id="downloadForm">
-            <label for="cardType">कार्ड का प्रकार चुनें:</label>
-            <select id="cardType" name="cardType">
-                <option value="aadhaar">आधार कार्ड</option>
-                <option value="voter">वोटर कार्ड</option>
-            </select>
-            
-            <label for="cardNumber">कार्ड नंबर:</label>
-            <input type="text" id="cardNumber" name="cardNumber" required>
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 
-            <button type="submit">डाउनलोड करें</button>
-        </form>
-    </main>
+main {
+    padding: 20px;
+    text-align: center;
+}
 
-    <footer>
-        <p>&copy; 2025 आधार और वोटर कार्ड प्रिंट</p>
-    </footer>
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+input, select {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
